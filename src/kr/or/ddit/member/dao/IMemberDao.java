@@ -45,4 +45,10 @@ public interface IMemberDao {
 	 */
 	public List<MemberVO> getAllMember();
 
+	/**
+	 * 회원정보를 검색하기 위한 메서드
+	 * @param mv 검색할 회원정보를 담은 MemberVO 객체
+	 * @return 검색된 회원정보를 담은 List 객체
+	 */
+	public List<MemberVO> searchMember(MemberVO mv);
 }
